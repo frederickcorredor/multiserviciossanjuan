@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Multiservicios</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="bannertitle">
+            <h1>Multiservicios Villa San Juan</h1>
+            <h4>Aliados Mega Red</h4>
+        </div>
+        <div class="bannercontent">
+            <ul>
+                <li>Paga tus facturas</li>
+                <li>Recarga de saldos y paquetes</li>
+                <li>Adquiere entretenimiento por streaming</li>
+            </ul>
+            <div class="bannerimage">
+            <img src="imagenbanner.png" alt="" id="animating-image">
+            </div>
+        </div>        
+    </div>
+    <div class="container1">
+        <h2>Paga tus servicios</h2>
+        <p>Paga tus servicios sin colas y sin salir de casa
+            envia una fotografia de tu factura y pide el link
+            de pago.<br>
+            En unos minutos recibiras el comprobante de tu pago.
+        </p>
+        <div class="subcontainer1">
+            <img src="3.png" alt="">
+            <img src="4.png" alt="">
+            <img src="5.png" alt="">
+            <img src="6.png" alt="">
+        </div>
+    </div>
+
+    <div class="container2">
+        <h3>Recargas y Pagos</h3>
+        <p>Realiza recargas de saldo, compra paquetes
+            o paga la factura de tu linea postpago.<br>
+            Pide el link de pago, indicanos el numero de 
+            telefono y la compañia, en unos minutos te enviamos
+            el comprobante.
+        <p>
+            <div class="subcontainer11">
+                <img src="claro.jpg" alt="">
+                <img src="tigo.png" alt="">
+                <img src="wom.png" alt="">
+                <img src="movistar.png" alt="">
+                <img src="virgin.png" alt="">
+                <img src="exito.png" alt="">
+                
+            </div>
+    </div>
+    <div class="container3">
+        <h2>Disfruta de todo el entretenimiento en streaming</h2>
+        <p>Disfruta del mejor contenido Series y peliculas
+            de las principales plataformas de streaming, 
+        </p>
+        <div class="subcontainer11">
+            <img src="netf-600x600.png" alt="">
+            <img src="Disney-600x600.png" alt="">
+            <img src="Prime-600x600.png" alt="">
+            <img src="Starr-600x600.png" alt="">
+            <img src="HBO-Max-600x600.png" alt="">
+            <img src="claro-win-600x600.png" alt="">
+            <img src="paramout-600x600.png" alt="">
+            <img src="lionsgate-600x600.png" alt="">
+            <img src="Crunchyr-600x600.png" alt="">
+        </div>
+        <div class="enlacecatalogo">
+            <h4>Mira nuestro catalogo de estreaing</h4>
+            <a href="#">Clic Aquí</a>
+        </div>
+    </div>
+    <a href="https://wa.link/4b13fl" target="_blank"><button class="whatsapp"></button></a>
+
+    <div class="bottom-container">
+        <p>Pregúntanos cómo puedes disfrutar de 1300 canales en vivo más series y películas bajo demanda.</p>
+    </div>
+
+<script>
+    const images = document.querySelectorAll('.subcontainer11 img');
+let currentImageIndex = 0;
+
+function rotateImages() {
+    images[currentImageIndex].style.transform = 'rotateY(360deg)';
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].style.transform = 'rotateY(0deg)';
+}
+
+setInterval(rotateImages, 8000); // 8000 milliseconds = 8 seconds
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+body{
+    margin: 2px;
+    padding: 4px;
+    font-size: 1rem;
+    background-color: rgb(59, 59, 248);
+    max-width: 100%;
+}
+
+.banner{
+    margin: 1px;
+    padding: 2px;
+    padding-bottom: 250px;
+    border: solid 2px white;
+    max-width: 100%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bannertitle{
+    width: 100%;
+}
+
+bannercontent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+li{
+    font-size: 2rem;
+    color: white;
+}
+
+p{
+    font-size: 2rem;
+    text-align: left;
+}
+
+.bannerimage{
+    position: absolute;
+    left: 100%;
+    animation: slideIn 3s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        left: 30%;
+    }
+}
+
+.bannerimage img{
+    width: 250px;
+    overflow: hidden;
+
+
+    
+}
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0px 8px;
+    background-color: white;
+}
+
+.subcontainer1 img{
+    width: 150px;
+}
+
+.subcontainer11 {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.subcontainer11 img{
+    width: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 2px;
+    transform: rotateY(0deg);
+    transition: transform 1s;
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0px 4px;
+}
+
+.container3{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0px 4px;
+    background-color: white;
+}
+
+h4{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.whatsapp{
+    background-image: url(whatsapp.png);
+    background-size: cover;background-position: center;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    padding: 1.5rem;
+}
+
+.bottom-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fa0f0f;
+    color: #fff;
+    text-align: center;
+
+}
+
+.bottom-container p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.enlacecatalogo{
+    background-color: blue;
+    padding-bottom: 80px;
+}
+.enlacecatalogo a{
+    font-size: 20px;
+    color: white;
+}
